@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para Karla, con todo mi amor ❤️</title>
+  <meta name="description" content="Un detalle hecho con amor para Karla: corazones flotando y un mensaje que dice cuánto la amo y lo especial que es."/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; background: radial-gradient(1200px 800px at 70% 20%, #ffdde7, #ffd1dc 40%, #ffd1dc 60%, #ffc6d2 75%, #fbc2d9 100%) fixed; color: #2b1b22; }
+
+    .sparkles { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
+    .wrapper { min-height: 100%; display: grid; place-items: center; padding: clamp(16px, 4vw, 48px); }
+    .card {
+      width: min(900px, 92vw);
+      background: rgba(255,255,255,0.72);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 28px;
+      box-shadow: 0 10px 30px rgba(174, 0, 72, 0.15);
+      padding: clamp(20px, 5vw, 40px);
+      position: relative;
+      overflow: hidden;
+    }
+    .title { display: flex; align-items: center; gap: 12px; justify-content: center; flex-wrap: wrap; text-align: center; margin: 0 0 8px; font-size: clamp(28px, 5vw, 40px); font-weight: 800; letter-spacing: 0.5px; }
+    .subtitle { text-align: center; margin: 0 0 22px; opacity: 0.85; font-size: clamp(14px, 2.4vw, 18px); }
+
+    .letter { line-height: 1.7; font-size: clamp(16px, 2.6vw, 19px); margin: 0; text-wrap: pretty; }
+    .letter p { margin: 0 0 14px; }
+    .letter p:last-child { margin-bottom: 0; }
+
+    .actions { display: flex; gap: 12px; justify-content: center; margin-top: 22px; flex-wrap: wrap; }
+    .btn {
+      appearance: none; border: 0; border-radius: 999px; padding: 12px 18px; cursor: pointer; font-weight: 700;
+      background: linear-gradient(90deg, #ff5578, #ff6b9a); color: white; box-shadow: 0 8px 20px rgba(255, 85, 120, 0.35);
+      transition: transform .15s ease, box-shadow .15s ease, filter .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(255, 85, 120, 0.45); }
+    .btn:active { transform: translateY(0); filter: brightness(.96); }
+
+    .btn.secondary { background: white; color: #ff3b72; border: 1.5px solid #ff8fb0; box-shadow: 0 6px 16px rgba(255, 92, 132, 0.18); }
+
+    .heart { position: absolute; width: 16px; height: 16px; transform: rotate(45deg); background: #ff4374; opacity: 0.9; filter: drop-shadow(0 3px 6px rgba(255,67,116,0.35)); animation: rise 6s linear infinite; }
+    .heart::before, .heart::after { content: ""; position: absolute; width: 16px; height: 16px; border-radius: 50%; background: inherit; }
+    .heart::before { left: -8px; }
+    .heart::after  { top: -8px; }
+
+    @keyframes rise { 0% { transform: translateY(0) rotate(45deg) scale(0.9); opacity: 0; } 10% { opacity: 0.95; } 100% { transform: translateY(-120vh) rotate(45deg) scale(1.1); opacity: 0; } }
+
+    .divider { height: 1px; width: 100%; background: linear-gradient(90deg, transparent, #ffd4e0, transparent); margin: 18px 0; }
+    .signature { margin-top: 12px; text-align: center; font-weight: 700; letter-spacing: .3px; opacity: .8; }
+
+    .extended { display: none; }
+    .extended.show { display: block; animation: fadeIn .35s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0);} }
+
+    @media print { body { background: white; } .sparkles, .actions { display: none !important; } .card { box-shadow: none; border: 0; } }
+
+    .music-player { text-align: center; margin: 18px 0; }
+    .music-player p { margin: 0 0 6px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+
+  <main class="wrapper">
+    <article class="card" role="article" aria-label="Carta para Karla">
+      <h1 class="title">Para Karla <span aria-hidden="true">💖</span></h1>
+      <p class="subtitle">Un pequeño universo de corazones para recordarte lo mucho que te amo.</p>
+
+      <div class="music-player">
+        <p>Una canción para ti 🎶</p>
+        <audio controls autoplay loop>
+          <source src="cancion.mp3.mp3" type="audio/mpeg">
+          Tu navegador no soporta audio, pero yo siempre te cantaré 💖
+        </audio>
+      </div>
+
+      <div class="divider" role="presentation"></div>
+
+      <section class="letter" id="letter">
+        <p>Amor, quiero que esta página te abrace como yo lo haría: suave, calentito y lleno de <strong>corazoncitos</strong>. Cada uno late por ti.</p>
+        <p>Te amo con paciencia, con ganas y con certeza. <strong>Eres especial</strong> en cada detalle: tu risa que ilumina, tu voz que calma, tus ojos que cuentan historias, y tu forma de ver el mundo que me inspira.</p>
+        <p>Me enamora <strong>todo de tu ser</strong>: tus sueños, tu corazón enorme, tus ocurrencias, tus silencios y hasta tus enojitos tiernos. No hay parte de ti que no admire; no hay día en el que no agradezca por tenerte.</p>
+        <p>Estoy para ti, siempre: para acompañarte, cuidarte, aplaudirte y levantarte cuando haga falta. <strong>Contigo quiero todo</strong>, porque en ti encontré hogar.</p>
+      </section>
+
+      <section class="letter extended" id="extended">
+        <p>Si alguna vez dudas, vuelve aquí y recuerda: fuiste, eres y serás mi elección. Me haces mejor persona, más valiente y más feliz. 
+        Gracias por existir, por ser tan tú, por llenar mi vida de sentido.</p>
+        <p>Prometo seguir construyendo contigo, paso a paso; celebrar tus logros, sostenerte en tus días pesados y bailar contigo incluso cuando no haya música.</p>
+      </section>
+
+      <div class="divider" role="presentation"></div>
+
+      <p class="signature">Con todo mi amor, hoy y siempre. — Gael</p>
+
+      <div class="actions">
+        <button class="btn" id="moreHearts">Más corazones</button>
+        <button class="btn secondary" id="toggleLetter">Abrir modo carta</button>
+        <button class="btn secondary" onclick="window.print()">Imprimir / Guardar PDF</button>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const sparkles = document.getElementById('sparkles');
+    const moreBtn   = document.getElementById('moreHearts');
+    const toggleBtn = document.getElementById('toggleLetter');
+    const extended  = document.getElementById('extended');
+
+    function spawnHeart({ x, size=16, duration=6000 } = {}) {
+      const h = document.createElement('span');
+      h.className = 'heart';
+      const px = (typeof x === 'number' ? x : Math.random() * 100);
+      const s = size * (0.7 + Math.random()*0.8);
+      h.style.left = px + 'vw';
+      h.style.bottom = '-24px';
+      h.style.width = s + 'px';
+      h.style.height = s + 'px';
+      h.style.animationDuration = (duration/1000 + Math.random()*2) + 's';
+      h.style.opacity = (0.7 + Math.random()*0.3);
+      sparkles.appendChild(h);
+      setTimeout(() => h.remove(), duration + 4000);
+    }
+
+    const baseRain = setInterval(() => spawnHeart(), 500);
+
+    moreBtn.addEventListener('click', () => {
+      for (let i = 0; i < 24; i++) {
+        setTimeout(() => spawnHeart({ size: 18, duration: 5500 }), i * 60);
+      }
+    });
+
+    toggleBtn.addEventListener('click', () => {
+      extended.classList.toggle('show');
+      toggleBtn.textContent = extended.classList.contains('show') ? 'Cerrar modo carta' : 'Abrir modo carta';
+      if (extended.classList.contains('show')) {
+        for (let i = 0; i < 12; i++) setTimeout(() => spawnHeart({ size: 20 }), i * 90);
+      }
+    });
+
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (mq.matches) {
+      clearInterval(baseRain);
+    }
+  </script>
+</body>
+</html>
+
